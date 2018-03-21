@@ -1,4 +1,5 @@
 .done {
     text-decoration-style: solid;
     text-decoration: line-through;
+    text-decoration-color: red;
 }
