@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { todos } from "../../utils/seedData";
+import TodoItem from "../todo-item/TodoItem";
 import "./TodoList.css";
 
 class TodoList extends Component {
@@ -14,12 +15,24 @@ class TodoList extends Component {
     return (
       <div id="todo-list">
         <h1 id="todo-title">{this.props.title}</h1>
-        {this.state.todos.map(function(todo, i) {
-          return <li key={i}>{todo.description}</li>;
+        {this.state.todos.map((todo, i) => {
+          return <TodoItem key={i} todo={todo} handleClick={this.handleClick.bind(this, i)}/>;
         })}
       </div>
     );
   }
+
+  handleClick(i){
+    const todosCopy = [...this.state.todos];
+    const todoUpdated = todosCopy[i];
+    todoUpdated.isCompleted ? todoUpdated["isCompleted"] = false : todoUpdated["isCompleted"] = true;
+
+    this.setState({
+      todos: todosCopy
+    })
+
+  }
+ 
 }
 
 export default TodoList;
