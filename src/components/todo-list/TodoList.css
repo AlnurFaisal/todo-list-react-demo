@@ -1,6 +1,7 @@
 #todo-list {
   max-width: 600px;
-  margin: 0 auto
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 #todo-title {

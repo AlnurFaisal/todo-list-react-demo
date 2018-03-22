@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import TodoForm from "./TodoForm";
 
 describe("TodoForm", () => {
-    it('should rerender state with updated values ', () => {
+    it('should have a form defined and the form should be able to be called ', () => {
         const mockCallback = jest.fn();
         const wrapper = shallow(<TodoForm handleSubmit={mockCallback} />);
 
