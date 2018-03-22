@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '9'
+cache:
+  directories:
+  - node_modules
+script:
+- yarn test
+- yarn build
+deploy:
+  provider: heroku
+  app: radiant-cliffs-99746
+  on:
+    repo: AlnurFaisal/todo-list-react-demo
+  api_key:
+    secure: f7PHBRAL23Vd1XB8Qg90XfB4bDySNjLxZX/nLF7QhBj/08XdPs1e9jM3JRSob6RWZcPAwTWJ/ev3BpBU4cbFyA/yZGNE9HAS3bUENT0XT/u/1To4nN6ne/yQhyJzIG58sC6J6ZkVLlnDOGlpiECQgt5AoOVzdgLKntQsPckWKe5jUNE3EWrpryQUCh8Mg+9z9FHkMvxhlDiP6+u/E3BfRrjvWjRpU1mgyhlJ4hfCvbNPNso0crD/t5h+wHGfYMreQIPuvdYkqjdaceDZkcKe+GwIHW+HKFEJcwss5nv/HjxEvmoJITUQiSf/vTL63jaq3OQVVp6KFe+/eIHdarvjoEpMMMuCQnAc+oZHW/Efw6xCy2+/UjwTXQA0V8HP2tWs5dakqasFrkyTzFROD3ARqOK8BDmGFzKuksxhFXfPnXyoCy7LItDnEXlvqmYdtJ+74mA7jpDN/ZxFmAtBUBQy+dtZNgvK3zZc8cf4u5TOK+WmkipvBRDT4PbE41B0Iyl4ct0Y2LEQA8lKTNAFbFWH/XHNhf2BA+SHFCgYCJY63aNTKsdU8L0F0T2IReXtpkVJY+asPEbKciynGSeXfa8hdioQyvOlXYd8nau3VL3CY+QUds4ihfQ12umkTtPh+x2aPq72tF680rM/KPfTL3vyJrcrDrz7eq3MB51sWYtLs+g=
