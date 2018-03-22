@@ -1,9 +1,25 @@
 #todo-list {
-  max-width: 600px;
-  margin: 0 auto;
   cursor: pointer;
 }
 
 #todo-title {
-  background: gold
+  font-weight: 500;
+  font-size: 55px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+body{
+  background: green;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.grid-container{
+  grid-template-columns: auto 50% auto;
+  padding: 20px 150px 20px 150px;
 }

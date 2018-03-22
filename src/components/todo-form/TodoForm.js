@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./TodoForm.css";
 
 class TodoForm extends Component {
   constructor() {
@@ -11,15 +12,12 @@ class TodoForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <label>
-          Add Todo Item:
-          <input
+          <input id="addlist"
             type="text"
             value={this.state.newTodos.description}
             onChange={this.handleChange.bind(this)}
           />
-        </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Add new item" id="button1"/>
       </form>
     );
   }

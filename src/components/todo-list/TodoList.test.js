@@ -14,11 +14,4 @@ describe("TodoList", () => {
     expect(wrapper.find(TodoForm)).toHaveLength(1);
   });
 
-  /*it("should listen and trigger onclick event that will check whether completed is set to do", () => {
-    const wrapper = shallow(<TodoList />);
-    const firstTodo = wrapper.find("TodoItem").first();
-    firstTodo.simulate("click");
-    console.log(firstTodo);
-    expect(firstTodo).toBe(true);
-  });*/
 });

@@ -1,0 +1,22 @@
+#addlist{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    font-size: 20px;
+    border-width: 5px;
+}
+
+#button1{
+    width:100%;
+    padding: 12px 20px;
+    font-size: 28px;
+    background: #2196F3;
+    color: white;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+}
